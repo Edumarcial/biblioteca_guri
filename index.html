@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://gurinaroca.org.br/wp-content/uploads/2020/04/favico.png">
     <script src="script.js"></script>
-    <title>Biblioteca dos Guri</title> 
+    <title>Biblioteca ONG Guri Na Roça</title> 
 </head>
 <body>
     <header class="header">
         <div class="header-content">
             <div class="logo">
-                <div class="logo-main">📚 Biblioteca dos Guri</div>
+                <div class="logo-main pacifico-bold">📚 Biblioteca dos Guri</div>
                 <div class="logo-subtitle">Biblioteca Virtual para ONG Guri na Roça</div>
             </div>
+            <img src="images/logo.png" alt="Logo Biblioteca dos Guri" class="logo-img">
             <nav class="nav">
                 <button class="nav-btn active" onclick="showSection('dashboard')">Início</button>
                 <button class="nav-btn" onclick="showSection('acervo')">Acervo</button>
@@ -26,7 +31,7 @@
     <div class="container">
         <!-- Dashboard -->
         <div id="dashboard" class="section active">
-            <h2 class="section-title">Início</h2>
+            <h2 class="section-title pacifico-bold">Início</h2>
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-number" id="totalLivros">245</div>
@@ -80,7 +85,7 @@
 
         <!-- Acervo -->
         <div id="acervo" class="section">
-            <h2 class="section-title">Gerenciamento de Acervo</h2>
+            <h2 class="section-title pacifico-bold">Gerenciamento de Acervo</h2>
             
             <div class="form-grid">
                 <div class="form-group">
@@ -164,7 +169,7 @@
 
         <!-- Empréstimos -->
         <div id="emprestimos" class="section">
-            <h2 class="section-title">Controle de Empréstimos</h2>
+            <h2 class="section-title pacifico-bold">Controle de Empréstimos</h2>
             
             <div class="form-grid">
                 <div class="form-group">
@@ -244,7 +249,7 @@
 
         <!-- Usuários -->
         <div id="usuarios" class="section">
-            <h2 class="section-title">Gerenciamento de Usuários</h2>
+            <h2 class="section-title pacifico-bold">Gerenciamento de Usuários</h2>
             
             <div class="form-grid">
                 <div class="form-group">
@@ -330,5 +335,9 @@
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <p>&copy; <span id="current-year"></span> Biblioteca ONG Guri Na Roça. Todos os direitos reservados.</p>
+        <p>Desenvolvido por alunos da UNIVESP</p>
+    </footer>
 </body>
 </html>

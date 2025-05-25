@@ -338,5 +338,7 @@ window.onclick = function (event) {
     }
 }
 
+document.getElementById('current-year').textContent = new Date().getFullYear();
+
 // Log para debug
 console.log('Script carregado com sucesso!');
